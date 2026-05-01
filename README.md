@@ -101,7 +101,7 @@ CREATE TABLE IF NOT EXISTS followups (
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
-## Notas
+## Notas Importantes
 
 - La plantilla de ficha es solo texto editable, no se guarda en base de datos
 - Cada seguimiento es independiente con su propio número de hoja
