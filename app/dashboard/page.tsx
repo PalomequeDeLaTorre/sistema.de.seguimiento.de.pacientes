@@ -21,8 +21,11 @@ export default async function DashboardPage() {
   const sessionCookie = cookieStore.get("session")?.value;
   const cookieHeader = sessionCookie ? `session=${sessionCookie}` : "";
 
+  // ✅ CORREGIDO: Removido /dashboard de la URL base
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "https://sistema-de-seguimiento-de-pacientes.vercel.app";
+  
   const res = await fetch(
-    `${process.env.NEXT_PUBLIC_APP_URL || "https://sistema-de-seguimiento-de-pacientes.vercel.app"}/api/export?type=stats`,
+    `${baseUrl}/api/export?type=stats`,
     { headers: { cookie: cookieHeader } },
   );
 
