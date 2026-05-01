@@ -1,6 +1,7 @@
 // app/patients/page.tsx
 "use client";
 
+import { Suspense } from "react";
 import { useState, useEffect, useRef } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Navbar from "@/components/Navbar";
@@ -79,7 +80,7 @@ function isWithin24h(followups: Followup[]): boolean {
   );
 }
 
-export default function PatientsPage() {
+function PatientsPageContent() {
   const router = useRouter();
 
   const [patients, setPatients] = useState<Patient[]>([]);
@@ -1348,5 +1349,20 @@ export default function PatientsPage() {
         </div>
       )}
     </>
+  );
+}
+
+export default function PatientsPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen flex items-center justify-center bg-gray-50">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-pink-600 mx-auto"></div>
+          <p className="mt-4 text-gray-600">Cargando pacientes...</p>
+        </div>
+      </div>
+    }>
+      <PatientsPageContent />
+    </Suspense>
   );
 }
