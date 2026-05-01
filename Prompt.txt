@@ -1,0 +1,37 @@
+Eres un desarrollador senior, 
+
+
+24 DE SEPTIEMBRE DEL 2025
+
+FICHA DE IDENTIFICACIÓN:
+
+NOMBRE:
+EDAD: 
+TEL:
+
+App: 
+QX:
+TRANSFUSIONES:
+Alergias:
+ENF CRON:
+TABACO:
+VARICES:
+GPO Y RH:
+
+Ago:
+MENARCA:
+RITMO:
+FUM:
+PIE:
+PAP: 
+MPF:
+GESTA:
+
+
+# === NEON DATABASE ===
+NEON_DB_HOST=ep-sweet-lab-anucqapv-pooler.c-6.us-east-1.aws.neon.tech
+NEON_DB_PORT=5432
+NEON_DB_NAME=neondb
+NEON_DB_USER=neondb_owner
+NEON_DB_PASSWORD=npg_dMvBngP5kZh2
+NEON_DATABASE_URL=postgresql://neondb_owner:npg_dMvBngP5kZh2@ep-sweet-lab-anucqapv-pooler.c-6.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require

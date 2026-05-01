@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+}
+
+@keyframes fadePink {
+  0%, 100% { background-color: #ffffff; }
+  50%       { background-color: #f5d8dd; }
+}
