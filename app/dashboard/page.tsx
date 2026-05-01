@@ -22,7 +22,7 @@ export default async function DashboardPage() {
   const cookieHeader = sessionCookie ? `session=${sessionCookie}` : "";
 
   const res = await fetch(
-    `${process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000"}/api/export?type=stats`,
+    `${process.env.NEXT_PUBLIC_APP_URL || "https://sistema-de-seguimiento-de-pacientes.vercel.app"}/api/export?type=stats`,
     { headers: { cookie: cookieHeader } },
   );
 
