@@ -102,3 +102,5 @@ created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 - Cada seguimiento es independiente con su propio número de hoja
 - Los PDFs se generan en el cliente con jsPDF
 
+## Sistema de Seguimiento de Pacientes
+
