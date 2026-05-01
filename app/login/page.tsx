@@ -123,12 +123,12 @@ export default function LoginPage() {
             <div className="w-20 h-20 mx-auto mb-3 rounded-2xl shadow-lg overflow-hidden">
               <img
                 src="/logo.jpg"
-                alt="Sistema de Seguimientos Pro"
+                alt="Seguimiento Clínico de Pacientes"
                 className="w-full h-full object-cover"
               />
             </div>
             <h2 className="text-lg font-bold text-[#1F2933]">
-              Sistema de Seguimientos Pro
+              Seguimiento Clínico de Pacientes
             </h2>
             <p className="text-xs text-[#6B7280] mt-1">
               Gestión integral de salud
